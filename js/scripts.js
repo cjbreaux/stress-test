@@ -19,9 +19,25 @@ $(document).ready(function(){
       relaxTechniques.push(userRelaxTechniques);
 
     });
-console.log(warningSigns);
-console.log(healthConditions);
-console.log(relaxTechniques);
+  console.log(warningSigns);
+  console.log(healthConditions);
+  console.log(relaxTechniques);
     // the idea is to put the values into separate arrays then compare the lengths of the arrays to use for evaluating conditionals
+
+  if (healthConditions.length > 3) {
+    alert("SEE A DOCTOR IMMEDIATELY");
+  }
+
+  if (warningSigns < relaxTechniques) {
+    alert("Looks like you are managing your stress well!")
+  }
+
+  if (healthConditions.length === 0 && warningSigns.length === 0 && relaxTechniques.length === 0) {
+    alert("Are you alive?")
+  }
+
+
+
+
   });
 });
