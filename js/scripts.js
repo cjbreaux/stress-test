@@ -36,6 +36,10 @@ $(document).ready(function(){
     alert("Are you alive?")
   }
 
+  if (warningSigns.length > relaxTechniques.length && healthConditions.length > 1) {
+    alert("Your stress level may be adversely affecting your health. Try more relaxation techniques!")
+  }
+
 
 
 
